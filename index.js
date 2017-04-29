@@ -13,10 +13,6 @@ const plugins = [
   }]
 ];
 
-if (process.env.NODE_ENV === 'production') {
-  presets.push(require('babel-preset-babili'));
-}
-
 if (!IS_NODE_SEVEN) {
   plugins.push(
     require('babel-plugin-transform-exponentiation-operator')
